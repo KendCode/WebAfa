@@ -1,0 +1,103 @@
+<!-- Documento html, importante para que se interprete en un navegador -->
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera web</title>
+</head>
+<body>
+    <!-- tabulacion para los espacios en las etiquetas -->
+
+    <!-- HEADIN O TITULO -->
+     <h1>Mi primer heading</h1>
+     <h2>Mi segundo heading</h2>
+     <h3>Mi tercer heading</h3>
+     <h4>Mi cuarto heading</h4>
+     <h5>Mi quinto heading</h5>
+     <h6>Hola Mundo</h6>
+
+     <!-- PARRAFO -->
+      <p>Etiqueta de parrafo</p>
+      <p>Segunda Etiqueta de parrafo</p>
+      <hr> <!--un sespacio con line-->
+      <p>Etiqueta de parrafo</p>
+      <p>Segunda Etiqueta de parrafo</p>
+
+        <!-- NAVEGAR -->
+         <a href="http://www.google.com">Ir a google</a>
+
+         <!-- IMAGENES -->
+          <!-- propiedades WIDTH -> ANCHO / HEIGHT -> ALTO -->
+          <img src="logoHtml.jpg" alt="logo de html">
+
+
+          <!-- FORMULARIO -> ACTION DONDE SE IRA LOS DATOS-->
+           <!-- GET ENVIA LOS VALORES QUE ESTA DENTRO DEL FORM -->
+           <!-- POST ENVIA DATOS PERO EN UN ARCHIVO -->
+           <form action="/formulario" method="POST">
+                <!-- LABEL NOMBRE DEL INPUT Y FOR ES UN FOCO/ IDENTIFICADOR PARA EL INPUT -->
+                <label for="nombre">Nombre:</label>
+                <!-- INPUT ID-> IDENTIFICADOR / NAME -> LLAVE PARA UN SERVIDOR / VALOR ES LO QUE SE AÑADE EN LA PAGINA -->
+                <!-- PLACEHOLDER TRANSPARENTE LO QUE DEBEMOS REALIAZR EN LA PAGINA -->
+                <!-- TYPE EL TIPO DE INPUT -->
+                <input value="es un valor por defecto" type="text" id="nombre" name="nombre" placeholder="INGRESA TU NOMBRE">
+                <!-- SALTO DE LINEA BR -->
+                <br>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="Apellido" placeholder="INGRESA TU APELLIDO">
+                <br>
+                <!-- COLS COLUMNAS / ROW FILAS -->
+                <label for="apellido">Comentario</label>
+                <textarea cols="10" rows="10" name="comentario" id="comentario" placeholder="ingrese comentario"></textarea>
+                <br>
+                <!-- <input type="submit" value=""> -->
+                 <!-- PUEDEN SER DISTINTOS TIPOS -->
+                 <button type="button">Boton</button>
+                 <button type="reset">tipo reset</button>
+                 <button type="submit">tipo submit</button>
+           </form>
+
+
+
+
+           <!-- LISTAS UL LISTA NO ORDENADA -->
+            <ul>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+            </ul>
+            <!-- Lista ordenada -->
+             <ol>
+                <li>Elemento A</li>
+                <li>Elemento B</li>
+                <li>Elemento C</li>
+                <li>
+                    <ol>
+                        <!-- ese estilo lo vuelve en letra -->
+                        <li style="list-style-type: lower-alpha;">Sub Elemneto 1</li>
+                        <li style="list-style-type: lower-alpha;">Sub Elemneto 2</li>
+                        <li style="list-style-type: lower-alpha;">Sub Elemneto 3</li>
+                    </ol>
+                </li>
+             </ol>
+
+             <br>
+
+
+            <!-- TABLA ) TR FILA DE TABLA& TH CABECERA COLUMNAS -->
+             <!-- STYLE  para table tn y td Y TAMA;OS NE LA TABLA -->
+              <!-- <table style="border: 1px  solid black;"> </table> -->
+             <table>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                </tr>
+                <tr>
+                    <!-- td DEFINE ELEMNTOS ESTANDARES DENTRO DE LA TABLA FILAS -->
+                     <td>best</td>
+                     <td>Gratis</td>
+                </tr>
+             </table>
+    </body>
+</html>
